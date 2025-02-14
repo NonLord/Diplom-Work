@@ -1,0 +1,189 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const imageUploadArea = document.getElementById('image-upload-area');
+    const imageInput = document.getElementById('image-input');
+    const imagePlaceholder = document.querySelector('.image-placeholder');
+    const generateButton = document.getElementById('generate-button');
+    const dropdownButtons = document.querySelectorAll('.dropdown-button');
+    const dropdownLists = document.querySelectorAll('.dropdown-list');
+    const roomTypeButton = document.querySelector('.room-type-button');
+    const budgetButton = document.querySelector('.budget-button');
+    const roomTypeOptions = document.querySelector('.room-type-options');
+    const budgetOptions = document.querySelector('.budget-options');
+    const fullscreenImagePanel = document.querySelector('.fullscreen-image-panel');
+    const fullscreenImage = document.querySelector('.fullscreen-image');
+    const leftArrowButton = document.querySelector('.left-arrow');
+    const rightArrowButton = document.querySelector('.right-arrow');
+
+    let uploadedImages = [];
+    let currentImageIndex = 0;
+
+    // Функция для обновления состояния кнопки "Сгенерировать"
+    function updateGenerateButtonState() {
+        if (uploadedImages.length > 0 && roomTypeButton.textContent !== 'Выберите тип комнаты' && budgetButton.textContent !== 'Выберите бюджет') {
+            generateButton.classList.remove('disabled');
+            generateButton.disabled = false;
+        } else {
+            generateButton.classList.add('disabled');
+            generateButton.disabled = true;
+        }
+    }
+
+     // Обработчики событий для выпадающих списков
+    dropdownButtons.forEach(button => {
+        button.addEventListener('click', (event) => {
+            const dropdown = event.target.closest('.dropdown');
+            const dropdownList = dropdown.querySelector('.dropdown-list');
+
+            // Закрываем все открытые списки
+            dropdownLists.forEach(list => {
+                if (list !== dropdownList) {
+                    list.classList.add('hidden');
+                }
+            });
+
+            // Переключаем видимость текущего списка
+            dropdownList.classList.toggle('hidden');
+
+            // Предотвращаем всплытие события, чтобы не закрыть список сразу
+            event.stopPropagation();
+        });
+    });
+
+    // Обработчики выбора элемента списка
+    dropdownLists.forEach(list => {
+      list.addEventListener('click', (event) => {
+          if (event.target.tagName === 'LI') {
+              const selectedValue = event.target.textContent;
+              const dropdown = event.target.closest('.dropdown');
+              const dropdownButton = dropdown.querySelector('.dropdown-button');
+              dropdownButton.textContent = selectedValue;
+              list.classList.add('hidden');
+
+              // Обновляем состояние кнопки "Сгенерировать"
+              updateGenerateButtonState();
+          }
+      });
+    });
+
+    // Закрываем выпадающий список при клике вне его
+    document.addEventListener('click', () => {
+        dropdownLists.forEach(list => list.classList.add('hidden'));
+    });
+
+    // Функция для отображения превью изображений
+    function displayImages() {
+        imagePlaceholder.innerHTML = ''; // Очищаем placeholder
+        uploadedImages.forEach((image, index) => {
+            const imgElement = document.createElement('img');
+            imgElement.src = image;
+            imgElement.alt = `Image ${index + 1}`;
+            imgElement.addEventListener('click', () => {
+                currentImageIndex = index;
+                showFullscreenImage(image);
+            });
+            imagePlaceholder.appendChild(imgElement);
+        });
+        updateGenerateButtonState(); // Обновляем кнопку после добавления изображений
+    }
+
+    // Обработчик события для загрузки изображений
+    imageUploadArea.addEventListener('click', () => {
+        imageInput.click();
+    });
+
+    imageInput.addEventListener('change', (event) => {
+        const files = event.target.files;
+        for (let i = 0; i < files.length; i++) {
+            const file = files[i];
+            const reader = new FileReader();
+
+            reader.onload = (e) => {
+                uploadedImages.push(e.target.result);
+                displayImages();
+            }
+
+            reader.readAsDataURL(file);
+        }
+    });
+
+    // Drag and drop functionality
+    imageUploadArea.addEventListener('dragover', (e) => {
+        e.preventDefault(); // Prevent default to allow drop
+        imageUploadArea.classList.add('dragover');
+    });
+
+    imageUploadArea.addEventListener('dragleave', () => {
+        imageUploadArea.classList.remove('dragover');
+    });
+
+    imageUploadArea.addEventListener('drop', (e) => {
+        e.preventDefault(); // Prevent default behavior (open as link on drop)
+        imageUploadArea.classList.remove('dragover');
+
+        const files = e.dataTransfer.files;
+        for (let i = 0; i < files.length; i++) {
+            const file = files[i];
+
+             // Проверка типа файла (должно быть изображением)
+            if (!file.type.startsWith('image/')) {
+                console.warn('Этот файл не является изображением:', file.name);
+                continue; // Пропускаем неверные файлы
+            }
+
+            const reader = new FileReader();
+
+            reader.onload = (event) => {
+                uploadedImages.push(event.target.result);
+                displayImages();
+            };
+
+            reader.readAsDataURL(file);
+        }
+    });
+
+    // Функция для отображения полноразмерного изображения
+    function showFullscreenImage(imageSrc) {
+        fullscreenImage.src = imageSrc;
+        fullscreenImagePanel.classList.remove('hidden');
+    }
+
+    // Функция для скрытия полноразмерного изображения
+    function hideFullscreenImage() {
+        fullscreenImagePanel.classList.add('hidden');
+    }
+
+    // Обработчики для стрелок
+    leftArrowButton.addEventListener('click', () => {
+        currentImageIndex = (currentImageIndex - 1 + uploadedImages.length) % uploadedImages.length;
+        showFullscreenImage(uploadedImages[currentImageIndex]);
+    });
+
+    rightArrowButton.addEventListener('click', () => {
+        currentImageIndex = (currentImageIndex + 1) % uploadedImages.length;
+        showFullscreenImage(uploadedImages[currentImageIndex]);
+    });
+
+    // Закрытие панели при клике вне изображения (реализуйте, если нужно)
+    fullscreenImagePanel.addEventListener('click', (event) => {
+        if (event.target === fullscreenImagePanel) {
+            hideFullscreenImage();
+        }
+    });
+
+    // Закрытие панели по нажатию Escape (реализуйте, если нужно)
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && !fullscreenImagePanel.classList.contains('hidden')) {
+            hideFullscreenImage();
+        }
+    });
+
+    // Обработчик для кнопки "Сгенерировать"
+    generateButton.addEventListener('click', () => {
+        if (generateButton.classList.contains('disabled')) {
+            alert('Пожалуйста, загрузите изображения и выберите параметры классификации.');
+        } else {
+            // Здесь будет логика для отправки данных на сервер для генерации изображения
+            alert('Генерация изображения...');
+        }
+    });
+});

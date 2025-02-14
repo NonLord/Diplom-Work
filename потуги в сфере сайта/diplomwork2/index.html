@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор Изображений</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background"></div>
+    <header class="header">
+        <div class="header-container">
+            <button class="button" id="offers-button">Предложения</button>
+            <button class="button" id="products-button">Товары</button>
+            <div class="services-dropdown">
+              <button class="services-button active">
+                <span class="service-type-selected">Услуги</span>
+                <span class="service-type-details">Текущая услуга</span>
+              </button>
+              <div class="services-dropdown-list hidden">
+                <ul>
+                  <li>Услуга 1</li>
+                  <li>Услуга 2</li>
+                  <li>Услуга 3</li>
+                </ul>
+              </div>
+            </div>
+            <button class="button" id="login-button">Войти</button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="image-upload-container">
+            <div class="image-upload-area" id="image-upload-area">
+                <div class="image-placeholder">
+                    <!-- Сюда будут добавляться превью изображений -->
+                </div>
+                <input type="file" id="image-input" multiple accept="image/*" style="display: none;">
+            </div>
+        </div>
+
+        <div class="classification-container">
+            <div class="classification-box">
+                <h3>Классификация комнаты</h3>
+                <div class="dropdown">
+                  <button class="dropdown-button room-type-button">Выберите тип комнаты</button>
+                  <div class="dropdown-list room-type-options hidden">
+                    <ul>
+                      <li>Гостиная</li>
+                      <li>Спальня</li>
+                      <li>Кухня</li>
+                      <li>Ванная</li>
+                      <li>Другое</li>
+                    </ul>
+                    <div class="scrollbar-background">
+                        <div class="scrollbar-thumb"></div>
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+
+            <div class="classification-box">
+                <h3>Бюджет</h3>
+                <div class="dropdown">
+                  <button class="dropdown-button budget-button">Выберите бюджет</button>
+                  <div class="dropdown-list budget-options hidden">
+                    <ul>
+                      <li>Эконом</li>
+                      <li>Стандарт</li>
+                      <li>Премиум</li>
+                      <li>Свой вариант</li>
+                    </ul>
+                    <div class="scrollbar-background">
+                        <div class="scrollbar-thumb"></div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <button class="generate-button disabled" id="generate-button">Сгенерировать</button>
+        </div>
+
+        <!-- Панель для отображения полноразмерного изображения -->
+        <div class="fullscreen-image-panel hidden">
+            <button class="arrow-button left-arrow">&lt;</button>
+            <img src="" alt="Полноразмерное изображение" class="fullscreen-image">
+            <button class="arrow-button right-arrow">&gt;</button>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

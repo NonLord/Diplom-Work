@@ -1,0 +1,508 @@
+
+ЗАДНИЙ ФОН
+W : 1920px
+H : 1080px
+Y : 0px
+X : 0px
+Radius : 0px
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+Fill : Solid color
+rgba(247, 247, 255, 0.58)
+
+
+
+
+ШАПКА (ПАНЕЛЬКА СВЕРХУ)
+W : 1920px
+H : 64px
+Y : 0px
+X : 0px
+Radius : 0px,0px,166px,166px
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+Fill : Solid color
+rgb(249, 249, 249)
+Stroke : Solid
+rgb(106, 220, 224)
+rgba(40, 46, 216, 0.66)
+rgba(126, 25, 235, 0.71)
+rgba(230, 36, 210, 0.58)
+rgba(0, 0, 0, 0)
+Align : Outside
+Width : 3px
+Stroke : Solid
+rgb(106, 220, 224)
+rgba(40, 46, 216, 0.66)
+rgba(126, 25, 235, 0.71)
+rgba(230, 36, 210, 0.58)
+rgba(0, 0, 0, 0)
+Align : Outside
+Width : 3px
+
+КНОПКА ВХОДА В ЛИЧНЫЙ КАБИНЕТ (НАХОДИТСЯ В ШАПКЕ):
+W : 92px
+H : 46px
+Y : 9px
+X : 1766px
+Radius : 89px
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+Fill : Solid color
+rgb(196, 196, 196)
+КНОПКА ТОВАРЫ (НАХОДИТСЯ В ШАПКЕ):
+W : 138px
+H : 46px
+Y : 9px
+X : 1601px
+Radius : 89px
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+Fill : Solid color
+rgb(196, 196, 196)
+КНОПКА ПРЕДЛОЖЕНИЯ (НАХОДИТСЯ В ШАПКЕ):
+W : 138px
+H : 46px
+Y : 9px
+X : 1444px
+Radius : 89px
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+Fill : Solid color
+rgb(196, 196, 196)
+КНОПКА УСЛУГИ В ПОКОЕ (НАХОДИТСЯ В ШАПКЕ):
+W : 138px
+H : 46px
+Y : 9px
+X : 1444px
+Radius : 89px
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+Fill : Solid color
+rgb(196, 196, 196)
+АКТИВНОЕ ОКНО ВЫБОРА УСЛУГ (НАХОДИТСЯ В ШАПКЕ):
+W : 155px
+H : 44px
+Y : -891px
+X : 981px
+Radius : 23px,23px,0px,0px
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+Fill : Solid color
+rgb(249, 249, 249)
+W : 326px
+H : 183px
+Y : -848px
+X : 981px
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+КНОПКА УСЛУГИ (ОНА УЖЕ БЫЛА АКТИВИРОВАНА И ОДНОВРЕМЕННО ПОКАЗЫВАЕТ КАКАЯ УСЛУГА СЕЙЧАС ПРИМЕНЯЕТСЯ(НА СТРАНИЦЫ КАКОЙ УСЛУГИ НАХОДИТСЯ ПОЛЬЗОВАТЕЛЬ)) (НАХОДИТСЯ В ШАПКЕ):
+W : 324.5px
+H : 44.5px
+Y : -969px
+X : 981px
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+Fill : Solid color
+rgb(249, 249, 249)
+Fill : Linear gradient
+rgb(247, 243, 255)
+rgb(255, 255, 255)
+rgb(255, 255, 255)
+Stroke : Solid
+rgb(106, 220, 224)
+rgba(40, 46, 216, 0.66)
+rgba(126, 25, 235, 0.71)
+rgba(230, 36, 210, 0.58)
+rgba(0, 0, 0, 0)
+Align : Center
+Width : 1px
+
+W : 93px
+H : 39px
+Y : -967px
+X : 1010px
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+Font family : Inter
+Font style : Bold
+Font size : 24px
+Font weight : 700
+Line height : 29px
+Letter spacing : 0px
+Align : CENTER
+Vertical align : MIDDLE
+Fill : Solid color
+rgba(68, 3, 121, 0.58)
+Stroke : Dashed
+rgba(0, 0, 0, 0.1)
+Align : Outside
+Width : 1px
+Join : Round
+Dash pattern : 3, 3
+
+W : 137px
+H : 39px
+Y : -967px
+X : 1147px
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+Font family : Inter
+Font style : Medium
+Font size : 24px
+Font weight : 500
+Line height : 29px
+Letter spacing : 0px
+Align : CENTER
+Vertical align : MIDDLE
+Fill : Solid color
+rgba(7, 107, 83, 0.44)
+Stroke : Dashed
+rgba(0, 0, 0, 0.1)
+Align : Outside
+Width : 1px
+Join : Round
+Dash pattern : 3, 3
+
+
+
+
+КНОПКА "ВСТАВКА" (МОЖНО ВСТАВИТЬ КАРТИНКУ/КАРТИНКИ (С ПОМОЩЬЮ НАЖАТИЯ НА НЕЁ И ПОСЛЕДУЮЩЕГО ПРОСМОТРА ДИРЕКТОРИЙ ИЛИ ПЕРЕНЕСТИ САМО ИЗОБРАЖЕНИЕ, ИЛИ НАЖАТЬ CTRL+V))
+W : 653px
+H : 646px
+Y : 181px
+X : 330px
+Radius : 97px
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+Fill : Solid color
+rgb(249, 249, 249)
+Stroke : Dashed
+rgb(106, 220, 224)
+rgba(40, 46, 216, 0.66)
+rgba(126, 25, 235, 0.71)
+rgba(230, 36, 210, 0.58)
+rgba(0, 0, 0, 0)
+Align : Outside
+Width : 8px
+Dash pattern : 8, 8
+Stroke : Dashed
+rgb(106, 220, 224)
+rgba(40, 46, 216, 0.66)
+rgba(126, 25, 235, 0.71)
+rgba(230, 36, 210, 0.58)
+rgba(0, 0, 0, 0)
+Align : Outside
+Width : 8px
+Dash pattern : 8, 8
+
+ГРАФИЧЕСКОЕ ОФОРМЛЕНИЕ (ВНУТРИ ЭТОГО, КУДА НАДО ВСТАВЛЯТЬ ИЗОБРАЖЕНИЯ)
+W : 390.58px
+H : 331px
+Y : 258px
+X : 514.42px
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+Fill : Solid color
+rgb(255, 255, 255)
+Effect : Drop shadown
+Radius : 80px
+Offset : 0px, 0px
+rgba(0, 0, 0, 0.25)
+Outside shadow
+X:0 Y:0 Blur: 80 extension: -27 rgba(0, 0, 0, 0.25)
+
+КОГДА УЖЕ ДОБАВЛЕННЫ ФОТО, ВНУТРИ КНОПКИ ВСТАВКА ПОКАЗЫВАЮТСЯ КАРТИНКИ ЧТО БЫЛИ ДОБАВЛЕННЫю А ПРИ НАЖАТИИ ОНИ ОТКРЫВАЮТСЯ НА ВЕСЬ ЭКРАН НАХОДЯСЬ В ТАКОЙ ПАНЕЛИ:
+W : 1380px
+H : 864px
+Y : 437px
+X : -2156px
+Radius : 97px
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+Fill : Solid color
+rgb(249, 249, 249)
+Stroke : Dashed
+rgb(106, 220, 224)
+rgba(40, 46, 216, 0.66)
+rgba(126, 25, 235, 0.71)
+rgba(230, 36, 210, 0.58)
+rgba(0, 0, 0, 0)
+Align : Outside
+Width : 8px
+Dash pattern : 8, 8
+Stroke : Dashed
+rgb(106, 220, 224)
+rgba(40, 46, 216, 0.66)
+rgba(126, 25, 235, 0.71)
+rgba(230, 36, 210, 0.58)
+rgba(0, 0, 0, 0)
+Align : Outside
+Width : 8px
+Dash pattern : 8, 8
+ЕСЛИ КАРТИНОК НЕСКОЛЬКО, ТО МОЖНО НАЖИМАТЬ НА КНОПКИ СТРЕЛОЧЕК КОТОРЫЕ ВЫГЛЯДЯТ ТАК:
+W : 116.5px
+H : 241.5px
+Y : 725px
+X : -2045px
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+Fill : Solid color
+rgb(249, 249, 249)
+Fill : Solid color
+rgba(247, 243, 255, 0.43)
+Stroke : Solid
+rgb(106, 220, 224)
+rgba(40, 46, 216, 0.66)
+rgba(126, 25, 235, 0.71)
+rgba(230, 36, 210, 0.58)
+rgba(0, 0, 0, 0)
+Align : Center
+Width : 2px
+
+W : 116.5px
+H : 241.5px
+Y : 725px
+X : -885.5px
+Rotation : -180°
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+Fill : Solid color
+rgb(249, 249, 249)
+Fill : Solid color
+rgba(247, 243, 255, 0.43)
+Stroke : Solid
+rgb(106, 220, 224)
+rgba(40, 46, 216, 0.66)
+rgba(126, 25, 235, 0.71)
+rgba(230, 36, 210, 0.58)
+rgba(0, 0, 0, 0)
+Align : Center
+Width : 2px
+
+
+
+ГРАФИЧЕСКИЙ ЭДЛЕМЕНТ,ЧТО ОТОБРАЖАЕТ ТЕКСТОМ ЛИМИТ ГЕНЕРАЦИЙ ДЛЯ ПОЛЬЗОВАТЕЛЯ
+W : 456.51px
+H : 380px
+Y : -39px
+X : -82px
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+Fill : Solid color
+rgb(255, 255, 255)
+Effect : Drop shadown
+Radius : 80px
+Offset : 0px, 0px
+rgba(0, 0, 0, 0.25)
+
+
+
+
+ЗАДНИЙ ПЛАН ОКНА В КОТОРОМ МОЖНО КЛАССИФИЦИРОВАТЬ ПОМЕЩЕНЕИЕ, А ТАК ЖЕ ЗАРАНЕЕ ВЫБРАТЬ НА КАКОЙ БЮДЖЕТ РАСЧИТЫВАЕТ ПОЛЬЗОВАТЕЛЬ
+W : 551px
+H : 715px
+Y : 163px
+X : 1143px
+Radius : 67px
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+Fill : Solid color
+rgb(249, 249, 249)
+Stroke : Solid
+rgb(106, 220, 224)
+rgba(40, 46, 216, 0.66)
+rgba(126, 25, 235, 0.71)
+rgba(230, 36, 210, 0.58)
+rgba(0, 0, 0, 0)
+Align : Outside
+Width : 4px
+
+ПОЛОЖЕНИЕ ВЫБОРА (КЛАССИФИКАЦИЯ КОМНАТЫ)
+W : 497px
+H : 232px
+Y : 233px
+X : 1170px
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+
+ПОЛОЖЕНИЕ ВЫБОРА (КЛАССИФИКАЦИЯ ЦЕНЫ)
+W : 497px
+H : 230px
+Y : 533px
+X : 1169px
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+
+КАЖДЫЙ ИЗ ЭТИХ ПАРАМЕТРОВ БУДЕТ ВЫБИРАТЬСЯ В ВЫПАДАЮЩЕМ СПИСКЕ (КОНЕЧНО БУДЕТ ЕЩЁ ВОЗМОЖНОСТЬ НАПИСАТЬ СВОЙ ВАРИАНТ ,НО ПОКА ЧТО ТОЛЬКО ОГРАНИЧЕННЫЕ ЗАГОТОВЛЕННЫЕ ВАРИАНТЫ), ВЫПАДАЮЩИЙ СПИСОК ПОЧТИ КАСТОМНЫЙ
+СТРЕЛОЧКА ДЛЯ СПИСКА:
+W : 35px
+H : 29px
+Y : 411.22px
+X : 1186px
+Rotation : 2°
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+Fill : Solid color
+rgb(249, 249, 249)
+Stroke : Solid
+rgb(106, 220, 224)
+rgba(40, 46, 216, 0.66)
+rgba(126, 25, 235, 0.71)
+rgba(230, 36, 210, 0.58)
+rgba(0, 0, 0, 0)
+Align : Center
+Width : 2px
+КНОПКА СПИСКА В СОСТОЯНИИ ПОКОЯ:
+W : 247px
+H : 77px
+Y : 686px
+X : 1170px
+Radius : 61px
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+Fill : Solid color
+rgb(255, 255, 255)
+Effect : Inner shadow
+Radius : 8px
+Offset : 0px, -3px
+rgba(0, 0, 0, 0.25)
+КНОПКА СПИСКА В НАЖАТОМ СОСТОЯНИИ:
+W : 247px
+H : 77px
+Y : -257px
+X : 1840px
+Radius : 61px,61px,61px,0px
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+Fill : Solid color
+rgb(255, 255, 255)
+Effect : Inner shadow
+Radius : 8px
+Offset : 0px, -3px
+rgba(0, 0, 0, 0.25)
+ВИД ВЫПАДАЮЩЕГО СПИСКА:
+W : 319px
+H : 317px
+Y : -180px
+X : 1840px
+Radius : 0px,61px,61px,61px
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+Fill : Solid color
+rgb(255, 255, 255)
+Fill : Solid color
+rgba(247, 243, 255, 0.43)
+Effect : Drop shadown
+Radius : 8px
+Offset : 0px, 5px
+rgba(0, 0, 0, 0.25)
+ФОН СКРОЛА:
+W : 19px
+H : 265px
+Y : -166px
+X : 1855px
+Radius : 101px
+Opacity : 0.31
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+Fill : Solid color
+rgb(249, 249, 249)
+Effect : Inner shadow
+Radius : 4px
+Offset : 0px, 4px
+rgba(0, 0, 0, 0.25)
+БЕГУНОК СКРОЛА:
+W : 17px
+H : 48px
+Y : -166px
+X : 1856px
+Radius : 101px
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+Fill : Solid color
+rgb(249, 249, 249)
+Stroke : Solid
+rgb(106, 220, 224)
+rgba(40, 46, 216, 0.66)
+rgba(126, 25, 235, 0.71)
+rgba(230, 36, 210, 0.58)
+rgba(0, 0, 0, 0)
+Align : Inside
+Width : 1px
+Effect : Drop shadown
+Radius : 4px
+Offset : 0px, 2px
+rgba(0, 0, 0, 0.25)
+
+КОГДА КАРТИНКИ ЗАГРУЖЕННЫ И ВСЕ ПАРАМЕТРЫ ВЫБРАНЫ, ТО ЗАГОРАЕТСЯ КНОПКА "СГЕНЕРИРОВАТЬ", ОБЫЧНО ОНА В "ВЫКЛЮЧЕННОМ СОСТОЯНИИ" (ПРОСТО СЕРАЯ И НЕ КЛИКАБЕЛЬНАЯ (ПРИ НАЖАТИИ НА НЕЁ ВЫВОДИТСЯ СООБЩЕНИЕ О ТОМ ЧТО ПОЛЬЗОВАТЕЛЬ ЕЩЁ НИЧЕГО НЕ НАСТРОИЛ)), КОГДА ВСЁ ГОТОВО - ОНА СТАНОВИТСЯ КЛИКАБЕЛЬНОЙ И ВЫГЛЯДИТ НОРМАЛЬНО
+W : 372px
+H : 151px
+Y : 824px
+X : 1363px
+Radius : 67px
+Opacity : 1
+Blend : Pass through
+X constraint : LEFT
+Y constraint : TOP
+Fill : Solid color
+rgb(249, 249, 249)
+Stroke : Solid
+rgb(106, 220, 224)
+rgba(40, 46, 216, 0.66)
+rgba(126, 25, 235, 0.71)
+rgba(230, 36, 210, 0.58)
+rgba(0, 0, 0, 0)
+Align : Outside
+Width : 4px
